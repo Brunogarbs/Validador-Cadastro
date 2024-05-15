@@ -1,5 +1,5 @@
 document.getElementById('cadastroForm').addEventListener('submit', function(event) {
-    event.preventDefault();  // Impede o envio do formulário padrão
+    event.preventDefault();  // Impede o envio do formulário padrão 
 
     let password = document.getElementById('password');
     let Confirmpassword = document.getElementById('Confirmpassword');
