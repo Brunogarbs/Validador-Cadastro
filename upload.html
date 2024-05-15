@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="upload.css">
+    <title>Upload</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="\img\undraw_upload_image_re_svxx.svg">
+        </div>
+
+        <div class="form">
+            <div class="bemvindo">
+                <h1>Olá <span id="name"></span>!</h1>
+            </div>
+            <div class="form-header">
+                <div class="title">
+                    <h1>Faça o Upload da sua imagem.</h1>
+                </div>
+            </div>
+            
+            <div class="Upload">
+                <label for="fileInput">
+                    <img src="\img\upload.png">
+                </label>
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            </div>
+            <div id="fileLabel"></div>
+
+            <div class="Upload-button">
+                <button><a href="#">Upload</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type = "text/javascript" src="cadastro.js"></script>
+<script type = "text/javascript" src="upload.js"></script>
+
+</html>
