@@ -1,6 +1,5 @@
 document.getElementById('cadastroForm').addEventListener('submit', function(event) {
     event.preventDefault();  // Impede o envio do formulário padrão
-    
 
     let password = document.getElementById('password');
     let Confirmpassword = document.getElementById('Confirmpassword');
@@ -18,11 +17,14 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
         }
     }
 
+    // Adiciona um listener ao campo de confirmação de senha para validar em tempo real
+    Confirmpassword.addEventListener('input', validarpassword);
+    
+    // Verifica se o formulário é válido e se as senhas coincidem antes de prosseguir
     if (form.checkValidity() && validarpassword()) {
         // Salva o primeiro nome no localStorage
         localStorage.setItem("firstName", firstNameInput.value);
         // Redireciona para a página upload.html
         window.location.href = "upload.html";
     }
-    
 });
